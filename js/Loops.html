@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="text" id="inpt">
+  <button id="btn">check</button>
+  <div id="msg"></div>
+  <script>
+
+    let btn = document.getElementById('btn');
+
+    btn.addEventListener('click', function check() {
+      let msg = document.getElementById('msg');
+      var inpt = parseFloat(document.getElementById('inpt'));
+
+      if (inpt) {
+        while (inpt <= 0) {
+          msg.textContent = 'Invalid input'
+          break;
+        }
+
+      }
+      else {
+        msg.textContent = 'Valid input'
+      }
+    }
+    )
+
+
+
+  </script>
+
+</body>
+
+</html>
